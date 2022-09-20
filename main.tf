@@ -51,7 +51,7 @@ resource "aws_security_group" "projectone_sg" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["${var.local_ip}/32","${var.joana_ip}/32"]
+    cidr_blocks = ["${var.local_ip}/32","${var.other_local_ip}/32"]
   }
 
   egress {
